@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import styled from 'styled-components';
+import MkLogo from './imagens/mk.jpg';
+import Counter from './components/container_contador'
 import './App.css';
 
-function App() {
+
+const App = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: 'Press Start 2P';
+`;
+const LogoContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  `;
+const Logo = styled.img`
+  height: 170px;
+`;
+
+
+
+const Aplication = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <App>
+      <LogoContainer>
+        <Logo 
+        src={MkLogo}
+        alt='Logo of Aplication practice' />
+      </LogoContainer>
+      <Counter />
+
+    </App>
+      
   );
 }
 
-export default App;
+export default Aplication;

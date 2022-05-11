@@ -1,0 +1,13 @@
+.boton-click {
+    background-color: #1A1C2A;
+
+}
+
+.boton-reininciar {
+    background-color: #1A1C2A;
+
+}
+
+button:hover {
+    background-color: #441D20;
+}
